@@ -10,6 +10,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
     />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
     <link
       href="https://fonts.googleapis.com/css?family=Source+Sans+Pro"
       rel="stylesheet"
@@ -32,7 +33,21 @@
         <li>
           <div class="nav-btn">
             <a href="index.html">
+              <span>Home</span>
+            </a>
+          </div>
+        </li>
+        <li>
+          <div class="nav-btn">
+            <a href="index.html">
               <span>Sobre</span>
+            </a>
+          </div>
+        </li>
+        <li>
+          <div class="nav-btn">
+            <a href="index.html">
+              <span>Experiências</span>
             </a>
           </div>
         </li>
@@ -46,7 +61,7 @@
         <li>
           <div class="nav-btn">
             <a href="index.html">
-              <span>Experiências</span>
+              <span>Contato</span>
             </a>
           </div>
         </li>
@@ -55,18 +70,27 @@
 
     <div class="full-section landing-page">
       <div>
-        <h2>Bem vindo(a) ao meu portfólio de Ciência de Dados! </h1>
-        <h4>Meu nome é Rennê Ruan e atuo em cargos relacionados a Ciência de Dados, Machine Learning e Analytics</h4>  
-        <h4 style="font-weight: normal;">Aqui você encontra meus projetos, artigos e demais informações profissionais.</h3>
+        <h1 class="fade-in" style="animation-duration: 0.5s;">Rennê Ruan</h1>
+        <h4 class="fade-in" style="animation-duration: 0.7s;">Ciência de Dados, Machine Learning e Analytics</h4>  
+        <!-- <h2 class="fade-in" style="animation-duration: 0.5s;"></h1> -->
+        <h4 class="fade-in" style="animation-duration: 0.9s; font-weight: normal;">Bem vindo(a) ao meu portfólio! Aqui você encontra meus projetos, artigos e demais informações profissionais.</h3>
+        <div class="social-links fade-in" style="animation-duration: 0.9s;">
+          <a href="https://github.com/renneruan" target="_blank" class="github">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/renne-oliveira" target="_blank" class="linkedin">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://medium.com/@data.renne" target="_blank" class="medium">
+            <i class="fab fa-medium"></i>
+          </a>
+        </div>
       </div>
-
     </div>
-    <div class="full-section">
+    <div class="full-section about">
       <div class="land-left-container">
-        <!-- <div class="profile-pic">
-          <img src="assets/profile-pic.png" />
-        </div> -->
-        <div class="profile-description">
+        
+        <div>
           <span class="justified-text">Sou um profissional com <b>5 anos de experiência no mercado de tecnologia</b>.
             Ao longo da minha jornada atuei em todo o ciclo de desenvolvimento de software,
             o que me forneceu uma capacidade não somente ferramental e tecnológica, mas estratégica e analítica.
@@ -77,23 +101,30 @@
             processo de decisões negociais e insights de negócio, colocando em prática uma das
             qualidades que mais prezo em meu perfil: a comunicação! Então se você busca um Cientista de Dados,
             com uma forte base matemática e estatística, com experiência em diferentes projetos de tecnologia
-            e também proficiente em Python e SQL, prazer!
+            e também <b>proficiente em Python e SQL</b>, prazer!
             </span>
         </div>
       </div>
-      <div class="land-right-container">This is another paragraph.</div>
-    </div>
-    <div class="full-section">
-      <div class="land-left-container">
-        <div class="profile-pic">
+      <div class="land-right-container">
+        <div class="fade-in-text profile-pic" style="animation-duration: 0.5s;">
           <img src="assets/profile-pic.png" />
         </div>
-        <div class="profile-description">
-          <h4>Rennê Ruan</h4>
-          <span>This is another paragraph.</span>
+      </div>
+    </div>
+    <div class="full-section experiences">
+      <h4>
+        Experiências Profissionais
+      </h4>  
+      <div class="experiences-container">
+        <div class="experience-block">
+          <span class="experience-name">Tribunal de Contas da União</span>
+          <span class="experience-time"> 07/2021 - atualmente</span>
+          <!-- <button class="experience-btn">Click me</button> -->
+        </div>
+        <div class="dropdown-text">
+          This is the dropdown text that appears when the block is clicked.
         </div>
       </div>
-      <div class="land-right-container">This is another paragraph.</div>
     </div>
 
     <script src="./script.js"></script>

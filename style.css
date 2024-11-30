@@ -5,6 +5,7 @@
 }
 
 body {
+  color: #eeeeee;
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
@@ -39,6 +40,8 @@ ul {
   /* border-bottom: 1px solid gray; */
   margin: auto;
   background-color: rgba(0, 0,0, 0.1);
+  z-index: 1000;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
 }
 
 .nav-links {
@@ -67,19 +70,77 @@ ul {
   border-bottom: 1px black;
 }
 
+/* Landing Page */
+
 .landing-page {
-  background-color: #e4e0db;
+  background-color: #333;
+  /* background: linear-gradient(rgba(228, 224, 219, 0.5), rgba(228, 224, 219, 0.5)),  */
+  /* url('assets/workspace.jpg') no-repeat center center; */
+  background-size: cover; 
+}
+
+.fade-in {
+  opacity: 0; 
+  transform: translateY(20px);
+  animation: fadeIn 1.5s ease-out forwards; 
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0); 
+  }
+}
+
+.social-links {
+  /* display: flex; */
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.social-links a {
+  text-decoration: none;
+  font-size: 2rem;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a.linkedin {
+  color: #0077b5; 
+}
+
+.social-links a.linkedin:hover {
+  color: #038ed8; 
+  transform: scale(1.3); 
+}
+
+.social-links a.github, .social-links a.medium {
+  color: #a5a5a5;
+}
+
+.social-links a.github:hover, .social-links a.medium:hover {
+  color: #f7f7f7;
+  transform: scale(1.3); 
+}
+/* Sobre */
+
+.about {
+  color: #333;
+  background-color: #b6bcc1;
 }
 
 .land-left-container {
-  height: 50%;
+  overflow: auto;
+  height: 60%;
   width: 40%;
   margin-right: 30px;
 }
 
 .land-right-container {
   height: 40px;
-  width: 20%;
+  width: 40%;
 }
 
 .profile-pic {
@@ -93,6 +154,88 @@ ul {
   width: 300px;
 }
 
-.profile-description {
-  margin-top: 20px;
+/* Experiences  */
+.experiences {
+  display: flex;
+  flex-direction: column;
+  background-color: #e4e0db;
+}
+
+.experiences-container {
+  display: flex;
+  flex-direction: column;
+  background-color: blue;
+  align-items: center;
+  text-align: center;
+  justify-content: start;
+  width: 70%;
+  height: 60vh;
+}
+
+/* Basic styles for the block */
+.experience-block {
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Position items at the start and end */
+  align-items: center;
+  text-align: start;
+  margin: 15px;
+  padding: 15px;
+  width: 90%;
+  /* padding: 10px; */
+  /* margin: 10px; */
+  /* background-color: #24292e; */
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.experience-name {
+  font-size: 16px;
+}
+
+.experience-time {
+  font-size: 16px;
+  font-weight: bold; /* Optional for emphasis */
+}
+
+.experience-block:hover {
+  background-color: #e0e0e0;
+}
+
+/* Dropdown text initially collapsed */
+.dropdown-text {
+  max-height: 0;
+  overflow: hidden;
+  /* margin-top: 10px; */
+  padding: 0 10px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #333;
+  transition: max-height 0.3s ease;
+}
+
+/* Expanded dropdown */
+.dropdown-text.show {
+  max-height: 200px; /* Set a max height that fits your content */
+  padding: 10px; /* Add padding when expanded */
+}
+
+
+/* Button styles (optional) */
+.experience-btn {
+  background-color: #6200ea;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.experience-btn:hover {
+  background-color: #4500b5;
 }
