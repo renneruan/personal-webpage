@@ -1,11 +1,11 @@
 /* First section styles */
 
 * {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Rubik", sans-serif;
 }
 
 body {
-  color: #eeeeee;
+  color: #333;
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
@@ -55,10 +55,6 @@ ul {
   margin: 0 15px;
 }
 
-#made-by {
-  margin-left: 5%;
-}
-
 .full-section {
   display: flex;
   flex-direction: row;
@@ -68,14 +64,26 @@ ul {
   justify-content: center;
   text-align: center;
   border-bottom: 1px black;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  overflow-y: hidden;
+}
+
+.container, .container-fluid {
+  height: auto;
+  max-height: 100vh;
 }
 
 /* Landing Page */
 
+.separator-gradient {
+  border: none;
+  /* border-top: 3px solid; */
+  background: linear-gradient(90deg, #164cc0, #bc10cf);
+  height: 3px; /* Optional: control thickness */
+  margin: 20px 0;
+}
+
 .landing-page {
-  background-color: #333;
-  /* background: linear-gradient(rgba(228, 224, 219, 0.5), rgba(228, 224, 219, 0.5)),  */
-  /* url('assets/workspace.jpg') no-repeat center center; */
   background-size: cover; 
 }
 
@@ -93,7 +101,6 @@ ul {
 }
 
 .social-links {
-  /* display: flex; */
   justify-content: center;
   gap: 10px;
   margin-top: 20px;
@@ -108,11 +115,11 @@ ul {
 }
 
 .social-links a.linkedin {
-  color: #0077b5; 
+  color: #038ed8;
 }
 
 .social-links a.linkedin:hover {
-  color: #038ed8; 
+  color: #0077b5; 
   transform: scale(1.3); 
 }
 
@@ -121,121 +128,84 @@ ul {
 }
 
 .social-links a.github:hover, .social-links a.medium:hover {
-  color: #f7f7f7;
+  color: #333;
   transform: scale(1.3); 
 }
+
+
 /* Sobre */
 
 .about {
+  overflow-y: auto;
   color: #333;
   background-color: #b6bcc1;
-}
-
-.land-left-container {
-  overflow: auto;
-  height: 60%;
-  width: 40%;
-  margin-right: 30px;
-}
-
-.land-right-container {
-  height: 40px;
-  width: 40%;
-}
-
-.profile-pic {
-  height: 160px;
-}
-
-.profile-pic img {
-  border-radius: 5px;
-  object-fit: contain;
-  height: 100%;
-  width: 300px;
 }
 
 /* Experiences  */
 .experiences {
   display: flex;
   flex-direction: column;
-  background-color: #e4e0db;
+  background-color: #333;
 }
 
 .experiences-container {
-  display: flex;
-  flex-direction: column;
-  background-color: blue;
-  align-items: center;
-  text-align: center;
-  justify-content: start;
   width: 70%;
-  height: 60vh;
+  height: 70vh;
 }
 
-/* Basic styles for the block */
-.experience-block {
-  display: flex; /* Use flexbox for layout */
-  justify-content: space-between; /* Position items at the start and end */
-  align-items: center;
-  text-align: start;
-  margin: 15px;
-  padding: 15px;
-  width: 90%;
-  /* padding: 10px; */
-  /* margin: 10px; */
-  /* background-color: #24292e; */
-  background-color: #f0f0f0;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+.experiences-accordion{
+  width: 100%;
 }
 
-.experience-name {
-  font-size: 16px;
+.experiences-accordion .accordion-item{
+  margin-bottom: 15px;
+  border-radius: 0 !important;
+  width: 100%;
 }
 
-.experience-time {
-  font-size: 16px;
-  font-weight: bold; /* Optional for emphasis */
-}
-
-.experience-block:hover {
-  background-color: #e0e0e0;
-}
-
-/* Dropdown text initially collapsed */
-.dropdown-text {
-  max-height: 0;
-  overflow: hidden;
-  /* margin-top: 10px; */
-  padding: 0 10px;
-  background-color: #ffffff;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  font-size: 14px;
+.accordion-button {
+  background-color: #f8f9fa;
   color: #333;
-  transition: max-height 0.3s ease;
+  font-weight: bold;
 }
 
-/* Expanded dropdown */
-.dropdown-text.show {
-  max-height: 200px; /* Set a max height that fits your content */
-  padding: 10px; /* Add padding when expanded */
+.accordion-button:not(.collapsed) {
+  background-color: #e9ecef;
+  color: #000;
 }
 
-
-/* Button styles (optional) */
-.experience-btn {
-  background-color: #6200ea;
-  color: white;
-  border: none;
-  padding: 10px 15px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
+.experiences-container .card {
+  border: 1px solid #ddd;
 }
 
-.experience-btn:hover {
-  background-color: #4500b5;
+.experiences-container .card-body {
+  text-align: start;
+  background-color: #fdfdfd;
+}
+
+.experiences-container .button-container {
+  text-align: end;
+}
+
+.experiences-container .btn-primary {
+  background-color: #6c63ff;
+  border-color: #6c63ff;
+}
+
+.experiences-container .btn-primary:hover {
+  background-color: #574fdf;
+}
+
+.experiences-container .modal{
+  color: #333;
+}
+
+.projects-row {
+  max-height: 70vh; /* Set the maximum height for the container */
+  overflow-y: auto; /* Enable vertical scrolling */
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px; /* Prevent scrollbar from overlapping content */
+  border: 1px #3333334c solid;
+  border-radius: 3px;
 }
