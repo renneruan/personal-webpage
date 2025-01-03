@@ -17,13 +17,21 @@ a {
 }
 
 ul {
-  list-style-type: none;
+  /* list-style-type: none; */
   margin: 0;
   padding: 0;
 }
 
 b {
   font-weight: 500;
+}
+
+.btn{
+  font-size: 14px;
+}
+
+.modal {
+  font-size: 14px;
 }
 
 .justified-text {
@@ -194,6 +202,15 @@ b {
   word-wrap: break-word;
   overflow-wrap: break-word;
   color: #666;
+}
+
+.timeline-item{
+  transition: .2s;
+}
+
+.timeline-item:hover{
+  transform: scale(1.05);
+  cursor: pointer;
 }
 
 .education {
