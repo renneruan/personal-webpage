@@ -22,6 +22,10 @@ ul {
   padding: 0;
 }
 
+b {
+  font-weight: 500;
+}
+
 .justified-text {
   display: block; 
   text-align: justify; 
@@ -31,6 +35,7 @@ ul {
 .navbar {
   left: 0;
   top: 0;
+  font-size: 15px;
   position: absolute;
   display: flex;
   width: 100%;
@@ -39,7 +44,7 @@ ul {
   padding: 15px 0;
   /* border-bottom: 1px solid gray; */
   margin: auto;
-  background-color: rgba(0, 0,0, 0.1);
+  /* background-color: rgba(0, 0,0, 0.1); */
   z-index: 1000;
   transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
 }
@@ -58,7 +63,7 @@ ul {
 .full-section {
   display: flex;
   flex-direction: row;
-  height: 100vh;
+  /* height: 100vh; */
   width: 100%;
   align-items: center;
   justify-content: center;
@@ -78,12 +83,14 @@ ul {
 .separator-gradient {
   border: none;
   /* border-top: 3px solid; */
-  background: linear-gradient(90deg, #164cc0, #bc10cf);
+  opacity: 1;
+  background: linear-gradient(90deg, #164cc0, #91149f);
   height: 3px; /* Optional: control thickness */
   margin: 20px 0;
 }
 
 .landing-page {
+  height: 100vh;
   background-size: cover; 
 }
 
@@ -133,79 +140,170 @@ ul {
 }
 
 
+.fixed-header {
+  position: sticky;
+  top: 0;
+  background-color: inherit;
+  z-index: 1000;
+}
+
 /* Sobre */
 
 .about {
+  height: 100vh;
   overflow-y: auto;
   color: #333;
-  background-color: #b6bcc1;
+  font-size: 14px;
+  /* background-color: #b6bcc1; */
 }
 
-/* Experiences  */
+.about .container-fluid {
+  height: 85%;
+}
+
+/* Formação */
+/* Timeline */
+.timeline {
+  text-align: center;
+  position: relative;
+  padding: 20px 0;
+  list-style: none;
+}
+
+.timeline-img {
+  flex: 0 0 100px;
+  /* margin-right: 20px; */
+}
+
+.timeline-img img {
+  width: 60px;
+  height: 60px;
+  /* border-radius: 50%; */
+  object-fit: contain;
+}
+
+.timeline-content {
+    /* width: 60px; */
+  width: 100%;
+  flex: 1;
+}
+
+.timeline-content p {
+  margin: 0 0 5px;
+  font-size: 10px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  color: #666;
+}
+
+.education {
+  /* font-size: 12px; */
+  border: #66666666 1px solid;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
 .experiences {
-  display: flex;
-  flex-direction: column;
-  background-color: #333;
+  border: #66666666 1px solid;
+  border-radius: 10px;
+  margin-top: 10px;
 }
 
-.experiences-container {
-  width: 70%;
-  height: 70vh;
-}
-
-.experiences-accordion{
-  width: 100%;
-}
-
-.experiences-accordion .accordion-item{
-  margin-bottom: 15px;
-  border-radius: 0 !important;
-  width: 100%;
-}
-
-.accordion-button {
-  background-color: #f8f9fa;
+/* Skills */
+.skills{
+  height: 100vh;
+  overflow-y: auto;
   color: #333;
-  font-weight: bold;
+  /* background-color: #b6bcc1; */
 }
 
-.accordion-button:not(.collapsed) {
-  background-color: #e9ecef;
-  color: #000;
+.skills .container{
+  width: 80%;
+  margin: auto;
+  /* height: 80%; */
+  /* border: #66666666 1px solid; */
+  /* border-radius: 10px; */
 }
 
-.experiences-container .card {
-  border: 1px solid #ddd;
+.skills-img {
+  flex: 0 0 100px;
+  /* margin-right: 20px; */
 }
 
-.experiences-container .card-body {
-  text-align: start;
-  background-color: #fdfdfd;
+.skills-img img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  /* border-radius: 50%; */
+  object-fit: contain;
 }
 
-.experiences-container .button-container {
-  text-align: end;
+.skills-content {
+    /* width: 60px; */
+  width: 100%;
+  flex: 1;
 }
 
-.experiences-container .btn-primary {
-  background-color: #6c63ff;
-  border-color: #6c63ff;
-}
-
-.experiences-container .btn-primary:hover {
-  background-color: #574fdf;
-}
-
-.experiences-container .modal{
+.skills-content p {
+  margin: 0 0 5px;
+  font-size: 14px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
   color: #333;
+}
+
+.projects .container-fluid {
+  max-height: none;
 }
 
 .projects-row {
-  max-height: 70vh; /* Set the maximum height for the container */
+  /* max-height: 70vh; Set the maximum height for the container */
   overflow-y: auto; /* Enable vertical scrolling */
   padding-right: 15px;
   padding-top: 10px;
   padding-bottom: 10px; /* Prevent scrollbar from overlapping content */
-  border: 1px #3333334c solid;
+  /* border: 1px #3333334c solid; */
   border-radius: 3px;
 }
+
+.projects-row .card{
+  font-size: 14px;
+}
+
+.projects-row .card-body{
+  height: 170px;
+}
+
+.projects-row .card-footer{
+  /* border-radius: none; */
+  border: none;
+  /* background-color: ; */
+}
+
+.btn-primary {
+  background-color: #5a149f;
+}
+
+.btn-primary:hover {
+  background-color: #83149f;
+} 
+
+/* Contact */ 
+.contact {
+  font-size: 14px;
+}
+
+.contact-form{
+  width: 60%;
+  margin: auto;
+}
+
+/* Footer */
+
+footer{
+  font-size: 12px;
+}
+
+/* General */
+

@@ -25,8 +25,8 @@
 
 <body>
   <!-- <img src="img_la.jpg" alt="LA" style="width: 100%" /> -->
-  <nav class="px-5 navbar navbar-expand-lg navbar-light bg-light fixed-top">
-    <a class="navbar-brand" href="#">Navbar</a>
+  <nav class="px-5 navbar navbar-expand-lg navbar-light sticky-top">
+    <!-- <a class="navbar-brand" href="#">Navbar</a> -->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -34,19 +34,19 @@
     <div class="collapse navbar-collapse " id="navbarNav">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link" href="#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="index.html">Sobre</a>
+          <a class="nav-link" href="#about">Sobre</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="index.html">Experiências</a>
+          <a class="nav-link" href="#skills">Competências</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="index.html">Projetos</a>
+          <a class="nav-link" href="#projects">Projetos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="index.html">Contato</a>
+          <a class="nav-link" href="#contact">Contato</a>
         </li>
       </ul>
     </div>
@@ -55,13 +55,16 @@
   <div class="full-section landing-page">
     <div class="container">
       <div class="col-12 justify-content-center">
-        <p class="m-0 font-weight-bold fade-in" style="animation-duration: 0.5s;">Olá! Meu nome é </p>
+
+        <p class="m-0 font-weight-bold fade-in mt-2" style="animation-duration: 0.5s; font-size: 14px;">Olá! Meu nome é
+        </p>
         <h3 class="fade-in mb-0" style="animation-duration: 0.5s;">Rennê Ruan</h3>
         <hr class="fade-in separator-gradient mt-0 mx-auto" style="width: 70px; animation-duration: 0.5s;">
-        <h4 class="fade-in" style="animation-duration: 0.7s;">Cientista de Dados e Data Analytics</h4>
+        <h4 class="fade-in" style="animation-duration: 0.7s;">Data Science | Data Analytics | Machine Learning</h4>
         <!-- <h2 class="fade-in" style="animation-duration: 0.5s;"></h1> -->
-        <p class="fade-in m-0" style="animation-duration: 0.9s; font-weight: normal;">Bem vindo(a) ao meu portfólio!</p>
-        <p class="fade-in m-0" style="animation-duration: 0.9s; font-weight: normal;"> Aqui
+        <p class="fade-in m-0" style="animation-duration: 0.9s; font-weight: normal; font-size: 14px;">Bem vindo(a) ao
+          meu portfólio!</p>
+        <p class="fade-in m-0" style="animation-duration: 0.9s; font-weight: normal; font-size: 14px;"> Aqui
           você encontra meus projetos, artigos e demais informações profissionais.</p>
         <div class="social-links fade-in" style="animation-duration: 0.9s;">
           <a href="https://github.com/renneruan" target="_blank" class="github">
@@ -77,155 +80,231 @@
       </div>
     </div>
   </div>
-  <div class="full-section about">
+  <div id="about" class="full-section about">
     <div class="container-fluid">
-      <div class="row align-items-center m-2 p-2 m-md-5 p-md-5">
-        <div class="text-justify">
-          <span class="justified-text">Sou um profissional com <b>5 anos de experiência no mercado de tecnologia</b>.
-            Ao longo da minha jornada atuei em todo o ciclo de desenvolvimento de software,
-            o que me forneceu uma capacidade não somente ferramental e tecnológica, mas estratégica e analítica.
-            Após minhas experiências como Engenheiro de Software, decidi direcionar minha carreira para
-            a Área de Dados, área que me encantou desde o primeiro momento e me impulsionou a iniciar
-            meu <b>mestrado</b> com ênfase em Inteligência Artificial.
-            A área de dados se tornou meu objetivo de carreira pelo contato mais próximo do
-            processo de decisões negociais e insights de negócio, colocando em prática uma das
-            qualidades que mais prezo em meu perfil: a comunicação! Então se você busca um Cientista de Dados,
-            com uma forte base matemática e estatística, com experiência em diferentes projetos de tecnologia
-            e também <b>proficiente em Python e SQL</b>, prazer!
-            meu <b>mestrado</b> com ênfase em Inteligência Artificial.
-            A área de dados se tornou meu objetivo de carreira pelo contato mais próximo do
-            processo de decisões negociais e insights de negócio, colocando em prática uma das
-            qualidades que mais prezo em meu perfil: a comunicação! Então se você busca um Cientista de Dados,
-            com uma forte base matemática e estatística, com experiência em diferentes projetos de tecnologia
-            e também <b>proficiente em Python e SQL</b>, prazer!
-          </span>
+      <h4 class="mb-0 ">Sobre mim</h4>
+      <hr class="separator-gradient mt-0 mx-auto" style="width: 110px;">
+
+      <div class="container row m-2 p-2 mx-md-5 px-md-5">
+        <div class="col-4">
+          <img src="file.png" class="img-thumbnail rounded mx-auto fade-in"
+            style="animation-duration: 0.5s; width: 150px" ; />
+        </div>
+        <div class="col-8 align-items-center">
+          <div class="text-justify">
+            <span class="justified-text">
+              Sou um profissional com mais de 7 anos de sólida experiência no desenvolvimento de aplicações e
+              na entrega de soluções tecnológicas, possuo Bacharelado em <b>Engenharia de Computação</b>
+              e pós-graduação em <b>Ciência de Dados</b>.
+              Atualmente curso <b>Mestrado em Inteligência Artificial e Machine Learning</b> pela Universidade de
+              Brasília,
+              tendo como foco de pesquisa o estudo e avaliação de aplicações avançadas na área.
+            </span>
+          </div>
+
+          <div class="m-4 education ">
+            <div class="timeline row pt-0">
+              <div class="timeline-item col-4">
+                <div class="timeline-img">
+                  <img src="assets/unb_logo.svg" alt="Image 1">
+                </div>
+                <div class="timeline-content">
+                  <p>Bacharelado em Engenharia da Computação</p>
+                  <!-- <p>Universidade de Brasília, Concluído em 06/2021</p> -->
+                </div>
+              </div>
+              <div class="timeline-item col-4">
+                <div class="timeline-img">
+                  <img src="assets/ceub_logo.webp" alt="Image 2">
+                </div>
+                <div class="timeline-content">
+                  <p>Especialização em Ciência de Dados e Machine Learning</p>
+                  <!-- <p>Centro Universitário de Brasília, 03/2024 - Em andamento</p> -->
+                </div>
+              </div>
+              <div class="timeline-item col-4">
+                <div class="timeline-img">
+                  <img src="assets/unb_logo.svg" alt="Image 3">
+                </div>
+                <div class="timeline-content">
+                  <p>Mestrado em Inteligência Artificial e Machine Learning</p>
+                  <!-- <p>Universidade de Brasília, 10/2024 - Em andamento</p> -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="m-4 experiences">
+            <div class="timeline row pt-0">
+              <div class="timeline-item col-4">
+                <div class="timeline-img">
+                  <img src="assets/tcu-logo.png" alt="Image 3">
+                </div>
+                <div class="timeline-content">
+                  <p>Engenheiro de Software</p>
+                  <p>SQL | Analytics | Gestão </p>
+                  <!-- <p>Universidade de Brasília, 10/2024 - Em andamento</p> -->
+                </div>
+              </div>
+              <div class="timeline-item col-4">
+                <div class="timeline-img">
+                  <img src="assets/hex-logo.svg" alt="Image 2">
+                </div>
+                <div class="timeline-content">
+                  <p>Analista de Desenvolvimento</p>
+                  <p>Python | SQL | AWS</p>
+                  <!-- <p>Centro Universitário de Brasília, 03/2024 - Em andamento</p> -->
+                </div>
+              </div>
+              <div class="timeline-item col-4">
+                <div class="timeline-img">
+                  <img src="assets/synapse-logo.png" alt="Image 1" data-bs-toggle="modal"
+                    data-bs-target="#detailsModal1">
+                </div>
+                <div class="timeline-content">
+                  <p>Desenvolvedor Fullstack </p>
+                  <p>PHP | MySQL | AWS</p>
+                  <!-- <p>Universidade de Brasília, Concluído em 06/2021</p> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal for Details -->
+    <div class="modal fade" id="detailsModal1" tabindex="-1" aria-labelledby="detailsModal1Label" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h6 class="modal-title" id="detailsModal1Label">Detalhes - Engenheiro de Software</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Durante este período, trabalhei no desenvolvimento de interfaces interativas para aplicativos e
+              sites,
+              utilizando ferramentas como HTML, CSS, JavaScript, e frameworks como React.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="full-section experiences">
-    <div class="container experiences-container">
-      <div class="col-12 text-center mb-4">
-        <h2>Experiências Profissionais</h2>
-      </div>
-      <div class="styled-bar"></div>
-      <div class="row">
-        <div class="col-12">
-          <div class="accordion experiences-accordion" id="experienceAccordion">
-            <div class="accordion-item border-0">
-              <h2 class="accordion-header" id="headingOne">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                  aria-expanded="true" aria-controls="collapseOne">
-                  Desenvolvedor Frontend - Empresa XYZ
-                </button>
-              </h2>
-              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                data-bs-parent="#experienceAccordion">
-                <div class="accordion-body">
-                  <div class="card">
-                    <div class="card-body">
-                      <h5 class="card-title">Desenvolvedor Frontend</h5>
-                      <p class="card-text">Período: Janeiro 2020 - Dezembro 2023</p>
-                      <p class="card-text">Cargo: Desenvolvimento de interfaces interativas e responsivas.</p>
-                      <div class="button-container">
+  <div id="skills" class="full-section skills mb-5">
+    <div class="container-fluid text-center">
+      <h4 class="mb-0 ">Ferramentas e Habilidades</h4>
+      <hr class="separator-gradient mt-0 mx-auto" style="width: 110px;">
 
-                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#detailsModal1">Ver
-                          Mais</button>
-                      </div>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
+      <div class="container my-2 p-2">
+        <div class="row">
+          <div class="col-4">
+            <div class="skills-img">
+              <img src="assets/icons/brain.png" alt="Image 1">
             </div>
-
-            <div class="accordion-item border-0">
-              <h2 class="accordion-header" id="headingTwo">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  Desenvolvedor Backend - Empresa ABC
-                </button>
-              </h2>
-              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                data-bs-parent="#experienceAccordion">
-                <div class="accordion-body">
-                  <div class="card">
-                    <div class="card-body">
-                      <h5 class="card-title">Desenvolvedor Backend</h5>
-                      <p class="card-text">Período: Março 2018 - Dezembro 2019</p>
-                      <p class="card-text">Cargo: Desenvolvimento de APIs e gerenciamento de banco de dados.</p>
-                      <div class="button-container">
-                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#detailsModal2">Ver
-                          Mais</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div class="skills-content">
+              <p>Ciência de Dados e Analytics</p>
+              <p>Técnicas de Machine Learning, Deep Learning e análise de dados, com base matemática e estatística para
+                trazer os melhores insights.</p>
+              <!-- <p>Universidade de Brasília, Concluído em 06/2021</p> -->
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="skills-img">
+              <img src="assets/icons/code.png" alt="Image 1">
+            </div>
+            <div class="skills-content">
+              <p>Engenharia de Software</p>
+              <p>Desenvolvimento de sistemas e APIs com qualidade, visando a disponibilização a nível
+                de produção dos modelos criados.</p>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="skills-img">
+              <img src="assets/icons/database.png" alt="Image 1">
+            </div>
+            <div class="skills-content">
+              <p>Banco de Dados</p>
+              <p>Proficiência em SQL e bancos relacionais PostgreSQL e MySQL, realizando modelagem de dados e queries
+                avançadas para consulta e manipulação.</p>
             </div>
           </div>
         </div>
-      </div>
-
-      <!-- Modal for Details -->
-      <div class="modal fade" id="detailsModal1" tabindex="-1" aria-labelledby="detailsModal1Label" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="detailsModal1Label">Detalhes - Desenvolvedor Frontend</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="row justify-content-center">
+          <div class="col-4">
+            <div class="skills-img">
+              <img src="assets/icons/settings.png" alt="Image 1">
             </div>
-            <div class="modal-body">
-              <p>
-                Durante este período, trabalhei no desenvolvimento de interfaces interativas para aplicativos e sites,
-                utilizando ferramentas como HTML, CSS, JavaScript, e frameworks como React.
+            <div class="skills-content">
+              <p>MLOps</p>
+              <p> Estratégias de CI/CD englobando testes unitários, ferramentas de
+                controle de versão, contâiners e soluções em nuvem.</p>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="skills-img">
+              <img src="assets/icons/project-management.png" alt="Image 1">
+            </div>
+            <div class="skills-content">
+              <p>Metodologias Ágeis e Liderança de Times</p>
+              <p>Experiência na liderança de times, priorização de backlog e gerência de cronogramas e qualidade de
+                projetos.
               </p>
             </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-            </div>
           </div>
-        </div>
-      </div>
-
-      <!-- Modal for Details of Item 2 -->
-      <div class="modal fade" id="detailsModal2" tabindex="-1" aria-labelledby="detailsModal2Label" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="detailsModal2Label">Detalhes - Desenvolvedor Backend</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <!-- <div class="col-4">
+            <div class="skills-img">
+              <img src="assets/unb_logo.svg" alt="Image 1">
             </div>
-            <div class="modal-body">
-              <p>
-                Responsável por projetar e implementar APIs RESTful, trabalhar com bases de dados como MySQL e
-                MongoDB,
-                além de garantir a integração eficiente com serviços de frontend.
+            <div class="skills-content">
+              <p>Metodologias Ágeis e Liderança de Times:</p>
+              <p>Experiência liderando times, priorizando backlogs e gerenciando cronogramas de projetos, promovendo a
+                colaboração, qualidade e o cumprimento dos objetivos de entrega.
               </p>
             </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-            </div>
+          </div> -->
+        </div>
+
+      </div>
+    </div>
+    <!-- Modal for Details -->
+    <div class="modal fade" id="detailsModal1" tabindex="-1" aria-labelledby="detailsModal1Label" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h6 class="modal-title" id="detailsModal1Label">Detalhes - Engenheiro de Software</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Durante este período, trabalhei no desenvolvimento de interfaces interativas para aplicativos e
+              sites,
+              utilizando ferramentas como HTML, CSS, JavaScript, e frameworks como React.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
           </div>
         </div>
       </div>
-
     </div>
   </div>
 
-  <div class="full-section projects">
-    <div class="container m-5 p-5">
-      <div class="col-12 text-center mb-4 text-black">
-        <h2>Projetos</h2>
-      </div>
-      <div class="container projects-row">
-        <div class="row row-cols-1 row-cols-md-3 g-4 ">
+  <div id="projects" class="full-section projects">
+    <div class="container-fluid">
+      <h4 class="mb-0 mt-3">Projetos</h4>
+      <hr class="separator-gradient mt-0 mx-auto" style="width: 110px;">
+
+      <div class="projects-row m-5">
+        <div class="row row-cols-1 row-cols-md-3 mx-5 g-4 ">
           <div class="col">
             <div class="card">
-              <img class="card-img-top" alt="...">
+              <img src="aac_logo_08252023.png" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
+                <p class="card-title">Card title</p>
                 <p class="card-text ">This is a longer card with supporting text below as a natural lead-in to
                   additional
                   content. This content is a little bit longer.</p>
@@ -249,10 +328,11 @@
           </div>
           <div class="col">
             <div class="card">
-              <img class="card-img-top" alt="...">
+              <img src="aac_logo_08252023.png" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                <p class="card-title">Card title</p>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                  additional
                   content. This content is a little bit longer.</p>
               </div>
               <div class="card-footer d-flex justify-content-around">
@@ -267,21 +347,22 @@
               </div>
             </div>
           </div>
-          <div class="col">
+          <!-- <div class="col">
             <div class="card">
-              <img class="card-img-top" alt="...">
+              <img src="aac_logo_08252023.png" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                <p class="card-title">Card title</p>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                  additional
                   content.</p>
               </div>
             </div>
-          </div>
+          </div> -->
           <div class="col">
             <div class="card">
-              <img class="card-img-top" alt="...">
+              <img src="aac_logo_08252023.png" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
+                <p class="card-title">Card title</p>
                 <p class="card-text ">This is a longer card with supporting text below as a natural lead-in to
                   additional
                   content. This content is a little bit longer.</p>
@@ -309,31 +390,52 @@
 
 
   </div>
-  <div class="full-section contact">
-    <div class="container mt-5">
-      <h2 class="text-center mb-4">Contato</h2>
-      <form>
-        <div class="mb-3">
-          <label for="name" class="form-label">Nome</label>
-          <input type="text" class="form-control" id="name" placeholder="Digite seu nome" required>
+  <div id="contact" class="full-section contact">
+    <div class="container mt-3">
+      <h4 class="mb-0">Contato</h4>
+      <hr class="separator-gradient mt-0 mx-auto" style="width: 110px;">
+
+      <div class="row">
+        <div class="col-6 mx-auto">
+          <p>
+            Se interessou pelo meu perfil? Me envie uma mensagem!
+            <br />
+            Meu LinkedIn: <a
+              href="https://www.linkedin.com/in/renne-oliveira">https://www.linkedin.com/in/renne-oliveira</a>
+            <br />
+            Email: data.renne@gmail.com
+          </p>
+          <p class="mb-0">
+            Ou envie diretamente pelo formulário abaixo.
+          </p>
+
+
+
+          <form class="my-3" id="contact-form">
+            <div class="mb-3">
+              <label for="name" class="form-label">Nome</label>
+              <input type="text" class="form-control" id="name" placeholder="Digite seu nome" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">E-mail</label>
+              <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail" required>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Mensagem</label>
+              <textarea class="form-control" id="message" rows="3" placeholder="Digite sua mensagem"
+                required></textarea>
+            </div>
+            <div class="mb-5">
+              <button type="submit" class="btn btn-primary">Enviar mensagem</button>
+            </div>
+          </form>
         </div>
-        <div class="mb-3">
-          <label for="email" class="form-label">E-mail</label>
-          <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail" required>
-        </div>
-        <div class="mb-3">
-          <label for="message" class="form-label">Mensagem</label>
-          <textarea class="form-control" id="message" rows="4" placeholder="Digite sua mensagem" required></textarea>
-        </div>
-        <div class="d-grid">
-          <button type="submit" class="btn btn-primary">Enviar</button>
-        </div>
-      </form>
+      </div>
     </div>
   </div>
 
-  <footer class="bg-dark text-white text-center py-3">
-    <p class="mb-0">&copy; 2024 Seu Nome ou Empresa. Todos os direitos reservados.</p>
+  <footer class="bg-dark text-white text-center py-2">
+    <p class="mb-0">&copy; 2024 Rennê Oliveira. Todos os direitos reservados.</p>
   </footer>
 
   <script src="./script.js"></script>

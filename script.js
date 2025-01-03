@@ -14,13 +14,13 @@
 //     dropdown.classList.toggle('show'); // Add or remove the 'show' class
 //   });
   
-let prevScrollpos = window.scrollY;
-window.onscroll = function () {
-  let currentScrollPos = window.scrollY;
-  if (prevScrollpos > currentScrollPos) {
-    document.querySelector("nav").style.top = "0"; // Show navbar
-  } else {
-    document.querySelector("nav").style.top = "-70px"; // Hide navbar
-  }
-  prevScrollpos = currentScrollPos;
-};
+// let prevScrollpos = window.scrollY;
+// window.onscroll = function () {
+//   let currentScrollPos = window.scrollY;
+//   if (prevScrollpos > currentScrollPos) {
+//     document.querySelector("nav").style.top = "0"; // Show navbar
+//   } else {
+//     document.querySelector("nav").style.top = "-70px"; // Hide navbar
+//   }
+//   prevScrollpos = currentScrollPos;
+// };
