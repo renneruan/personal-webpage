@@ -25,9 +25,9 @@
 
 <body>
   <!-- <img src="img_la.jpg" alt="LA" style="width: 100%" /> -->
-  <nav class="px-5 navbar navbar-expand-lg navbar-light sticky-top">
+  <nav class="px-lg-5 px-2 navbar navbar-expand-lg navbar-light sticky-top">
     <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -53,46 +53,63 @@
   </nav>
 
   <div class="full-section landing-page">
-    <div class="container">
-      <div class="col-12 justify-content-center">
+    <div class="col-12 justify-content-center">
 
-        <p class="m-0 font-weight-bold fade-in mt-2" style="animation-duration: 0.5s; font-size: 14px;">Olá! Meu nome é
-        </p>
-        <h3 class="fade-in mb-0" style="animation-duration: 0.5s;">Rennê Ruan</h3>
-        <hr class="fade-in separator-gradient mt-0 mx-auto" style="width: 70px; animation-duration: 0.5s;">
-        <h4 class="fade-in" style="animation-duration: 0.7s;">Data Science | Data Analytics | Machine Learning</h4>
-        <!-- <h2 class="fade-in" style="animation-duration: 0.5s;"></h1> -->
-        <p class="fade-in m-0" style="animation-duration: 0.9s; font-weight: normal; font-size: 14px;">Bem vindo(a) ao
-          meu portfólio!</p>
+      <!-- <p class="m-0 font-weight-bold fade-in mt-2" style="animation-duration: 0.5s; font-size: 14px;">Olá! Meu nome é -->
+      <!-- </p> -->
+      <h3 class="fade-in mb-0" style="animation-duration: 0.5s;">Rennê Ruan</h3>
+      <hr class="fade-in separator-gradient mt-0 mx-auto"
+        style="width: 70px; animation-duration: 0.5s; background: white !important;">
+      <h4 class="fade-in" style="animation-duration: 0.7s;">Data Science | Data Analytics | Machine Learning</h4>
+      <!-- <h2 class="fade-in" style="animation-duration: 0.5s;"></h1> -->
+      <p class="fade-in m-0" style="animation-duration: 0.9s; font-weight: normal; font-size: 14px;">Bem vindo(a) ao
+        meu portfólio!</p>
 
-        <div class="social-links fade-in" style="animation-duration: 0.9s;">
-          <a href="https://github.com/renneruan" target="_blank" class="github">
-            <i class="fab fa-github"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/renne-oliveira" target="_blank" class="linkedin">
-            <i class="fab fa-linkedin"></i>
-          </a>
-          <a href="https://medium.com/@data.renne" target="_blank" class="medium">
-            <i class="fab fa-medium"></i>
-          </a>
-        </div>
-        <div class="btn btn-outline-secondary fade-in mt-5" style="font-size:14px ;animation-duration: 0.9s">
-          <a href="assets/files/cv_renne_cientista_dados_pt-br.pdf" target="_blank">Acesse meu Currículo</a>
-        </div>
+      <div class="social-links fade-in" style="animation-duration: 0.9s;">
+        <a href="https://github.com/renneruan" target="_blank" class="github">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/renne-oliveira" target="_blank" class="linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://medium.com/@data.renne" target="_blank" class="medium">
+          <i class="fab fa-medium"></i>
+        </a>
+      </div>
+      <div class="btn btn-outline-light fade-in mt-5" style="font-size:14px ;animation-duration: 0.9s">
+        <a href="assets/files/cv_renne_cientista_dados_pt-br.pdf" target="_blank">Acesse meu Currículo</a>
       </div>
     </div>
+    <div class="container">
+      <div>
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+          <defs>
+            <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+          </defs>
+          <g class="parallax">
+            <!-- <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" /> -->
+            <!-- <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" /> -->
+            <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+            <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+          </g>
+        </svg>
+      </div>
+      <!--Waves end-->
+    </div>
   </div>
+
   <div id="about" class="full-section about">
     <div class="container-fluid">
       <h4 class="mb-0 ">Sobre mim</h4>
       <hr class="separator-gradient mt-0 mx-auto" style="width: 110px;">
 
-      <div class="container row m-2 p-2 mx-md-5 px-md-5">
-        <div class="col-4 d-flex align-items-center">
-          <img src="file.png" class="img-thumbnail mx-auto; width: 250px" ; />
+      <div class="container row mx-auto p-3 my-2  px-lg-5">
+        <div class="col-lg-4 col-12 d-flex align-items-center">
+          <img src="file.png" class="img-thumbnail mx-auto mb-3 about-image" />
         </div>
-        <div class="col-8 align-items-center">
-          <div class="text-justify mx-4">
+        <div class="col-lg-8 col-12 align-items-center">
+          <div class="text-justify mx-lg-4">
             <span class="justified-text">
               Sou um profissional com mais de 7 anos de sólida experiência no desenvolvimento de aplicações e
               na entrega de soluções tecnológicas, possuo Bacharelado em <b>Engenharia de Computação</b>
@@ -103,7 +120,7 @@
             </span>
           </div>
 
-          <div class="m-4 education ">
+          <div class="m-4 education">
             <div class="timeline row py-1">
               <div class="timeline-item col-4" data-bs-toggle="modal" data-bs-target="#detailsModal1">
                 <div class="timeline-img">
@@ -423,7 +440,7 @@
 
       <div class="container my-2 p-2">
         <div class="row">
-          <div class="col-4">
+          <div class="col-md-4">
             <div class="skills-img">
               <img src="assets/icons/brain.png" alt="Image 1">
             </div>
@@ -434,7 +451,7 @@
               <!-- <p>Universidade de Brasília, Concluído em 06/2021</p> -->
             </div>
           </div>
-          <div class="col-4">
+          <div class="col-md-4">
             <div class="skills-img">
               <img src="assets/icons/code.png" alt="Image 1">
             </div>
@@ -444,7 +461,7 @@
                 de produção dos modelos criados.</p>
             </div>
           </div>
-          <div class="col-4">
+          <div class="col-md-4">
             <div class="skills-img">
               <img src="assets/icons/database.png" alt="Image 1">
             </div>
@@ -456,7 +473,7 @@
           </div>
         </div>
         <div class="row justify-content-center">
-          <div class="col-4">
+          <div class="col-md-4">
             <div class="skills-img">
               <img src="assets/icons/settings.png" alt="Image 1">
             </div>
@@ -466,7 +483,7 @@
                 controle de versão, contâiners e soluções em nuvem.</p>
             </div>
           </div>
-          <div class="col-4">
+          <div class="col-md-4">
             <div class="skills-img">
               <img src="assets/icons/project-management.png" alt="Image 1">
             </div>
@@ -527,6 +544,58 @@
               </div>
             </div>
           </div>
+          <div class="col">
+            <div class="card">
+              <img src="aac_logo_08252023.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title">Card title</p>
+                <p class="card-text ">This is a longer card with supporting text below as a natural lead-in to
+                  additional
+                  content. This content is a little bit longer.</p>
+                <p>
+                  <span class="badge rounded-pill bg-primary">Machine Learning</span>
+                  <span class="badge rounded-pill bg-secondary">Regressão Linear</span>
+                  <!-- <span class="badge rounded-pill bg-success">Python</span> -->
+                </p>
+              </div>
+              <div class="card-footer d-flex justify-content-around">
+                <a href="https://github.com/seu-usuario" target="_blank"
+                  class="btn btn-outline-secondary btn-sm d-flex align-items-center">
+                  <i class="fab fa-github me-2"></i> GitHub
+                </a>
+                <a href="https://medium.com/@seu-usuario" target="_blank"
+                  class="btn btn-outline-secondary btn-sm d-flex align-items-center">
+                  <i class="fab fa-medium me-2"></i> Medium
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="aac_logo_08252023.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title">Card title</p>
+                <p class="card-text ">This is a longer card with supporting text below as a natural lead-in to
+                  additional
+                  content. This content is a little bit longer.</p>
+                <p>
+                  <span class="badge rounded-pill bg-primary">Machine Learning</span>
+                  <span class="badge rounded-pill bg-secondary">Regressão Linear</span>
+                  <!-- <span class="badge rounded-pill bg-success">Python</span> -->
+                </p>
+              </div>
+              <div class="card-footer d-flex justify-content-around">
+                <a href="https://github.com/seu-usuario" target="_blank"
+                  class="btn btn-outline-secondary btn-sm d-flex align-items-center">
+                  <i class="fab fa-github me-2"></i> GitHub
+                </a>
+                <a href="https://medium.com/@seu-usuario" target="_blank"
+                  class="btn btn-outline-secondary btn-sm d-flex align-items-center">
+                  <i class="fab fa-medium me-2"></i> Medium
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -539,7 +608,7 @@
       <hr class="separator-gradient mt-0 mx-auto" style="width: 110px;">
 
       <div class="row">
-        <div class="col-6 mx-auto">
+        <div class="col-md-6 col-10 mx-auto">
           <p>
             Se interessou pelo meu perfil? Me envie uma mensagem!
             <br />

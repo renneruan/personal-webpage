@@ -62,6 +62,10 @@ b {
   margin-right: 5%;
 }
 
+.nav-link {
+  color: #ffffffe8;
+}
+
 .nav-btn {
   width: auto;
   text-align: center;
@@ -70,7 +74,8 @@ b {
 
 .full-section {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: stretch; 
   /* height: 100vh; */
   width: 100%;
   align-items: center;
@@ -82,8 +87,13 @@ b {
 }
 
 .container, .container-fluid {
+  padding: 0;
   height: auto;
-  max-height: 100vh;
+  /* max-height: 100vh; */
+}
+
+.container-waves{
+  z-index: 100;
 }
 
 /* Landing Page */
@@ -98,7 +108,9 @@ b {
 }
 
 .landing-page {
+  color: #ffffffe8;
   height: 100vh;
+  background: linear-gradient(90deg, #164cc0, #91149f);
   background-size: cover; 
 }
 
@@ -128,23 +140,23 @@ b {
   border-radius: 5px;
   transition: color 0.3s ease, transform 0.3s ease;
 }
-
+/* 
 .social-links a.linkedin {
-  color: #038ed8;
+  color: #4fa9e2; /* Lighter blue for better contrast on darker background 
+} */
+
+/* .social-links a.linkedin:hover { */
+  /* color: #0a66c2; Slightly darker blue for hover effect */
+  /* transform: scale(1.3); */
+/* } */
+
+.social-links a{
+  color: #d1d1d1; /* Softer gray for improved visibility */
 }
 
-.social-links a.linkedin:hover {
-  color: #0077b5; 
-  transform: scale(1.3); 
-}
-
-.social-links a.github, .social-links a.medium {
-  color: #a5a5a5;
-}
-
-.social-links a.github:hover, .social-links a.medium:hover {
-  color: #333;
-  transform: scale(1.3); 
+.social-links a:hover {
+  color: #ffffff; /* Darker gray for hover effect */
+  transform: scale(1.3);
 }
 
 
@@ -158,24 +170,51 @@ b {
 /* Sobre */
 
 .about {
-  height: 100vh;
-  overflow-y: auto;
+  min-height: 100vh;
+  /* overflow-y: auto; */
   color: #333;
   font-size: 14px;
   /* background-color: #b6bcc1; */
+}
+
+@media only screen and (max-width: 991px) {
+  .about-image {
+    width: 170px;
+    margin-bottom: 20px;
+  }
+  .projects-row .card-body{
+    height: 210px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .about-image {
+    width: 250px;
+  }
+  .projects-row .card-body{
+    height: 180px;
+  }
 }
 
 .about .container-fluid {
   height: 85%;
 }
 
-/* Formação */
-/* Timeline */
 .timeline {
   text-align: center;
   position: relative;
   padding: 20px 0;
   list-style: none;
+  /* overflow-x: auto;    Enable horizontal scrolling */
+}
+
+.timeline::-webkit-scrollbar {
+  padding: 20px;
+  height: 8px; /* Optional: Custom scrollbar height */
+}
+.timeline::-webkit-scrollbar-thumb {
+  background: #ccc; /* Optional: Custom scrollbar color */
+  border-radius: 4px;
 }
 
 .timeline-img {
@@ -205,6 +244,7 @@ b {
 }
 
 .timeline-item{
+  min-width: 90px;
   transition: .2s;
 }
 
@@ -228,7 +268,7 @@ b {
 
 /* Skills */
 .skills{
-  height: 100vh;
+  /* height: 100vh; */
   overflow-y: auto;
   color: #333;
   /* background-color: #b6bcc1; */
@@ -277,7 +317,7 @@ b {
 .projects-row {
   /* max-height: 70vh; Set the maximum height for the container */
   overflow-y: auto; /* Enable vertical scrolling */
-  padding-right: 15px;
+  padding: 15px;
   padding-top: 10px;
   padding-bottom: 10px; /* Prevent scrollbar from overlapping content */
   /* border: 1px #3333334c solid; */
@@ -288,8 +328,16 @@ b {
   font-size: 14px;
 }
 
+.projects-row .card-body::-webkit-scrollbar {
+  width: 8px; /* Optional: Custom scrollbar height */
+}
+.projects-row .card-body::-webkit-scrollbar-thumb {
+  background: #ccc; /* Optional: Custom scrollbar color */
+  border-radius: 4px;
+}
+
 .projects-row .card-body{
-  height: 170px;
+  overflow-y: auto;
 }
 
 .projects-row .card-footer{
@@ -324,3 +372,60 @@ footer{
 
 /* General */
 
+
+
+.waves {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 15vh;
+  margin-bottom: -10px;
+  /*Fix for safari gap*/
+  min-height: 100px;
+  max-height: 150px;
+}
+
+/* Animation */
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}
+
+/* /* Shrinking for mobile */
+@media (max-width: 768px) {
+  .waves {
+    height: 40px;
+    min-height: 40px;
+  }
+}
