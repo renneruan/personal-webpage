@@ -1,26 +1,30 @@
-// window.addEventListener('scroll', function () {
-//     const navbar = document.querySelector('.navbar');
-//     const scrollPosition = window.scrollY;
+const navbar = document.getElementById('navbarNav');
+const overlay = document.querySelector('.overlay');
 
-//     if (scrollPosition > 150) {
-//         navbar.style.backgroundColor = 'rgba(0, 0, 0, 0)'; 
-//     } else {
-//         navbar.style.backgroundColor = 'rgba(0, 0, 0, 0.1)'; 
-//     }
-// });
+navbar.addEventListener('show.bs.collapse', () => {
+overlay.classList.add('active');
+});
 
-// document.querySelector('.experience-btn').addEventListener('click', function () {
-//     const dropdown = document.querySelector('.dropdown-text');
-//     dropdown.classList.toggle('show'); // Add or remove the 'show' class
-//   });
+navbar.addEventListener('hide.bs.collapse', () => {
+overlay.classList.remove('active');
+});
+
+
+document.addEventListener('click', function (event) {
+    const navbar = document.getElementById('navbarNav'); // The collapsible navbar
+    const toggleButton = document.querySelector('.navbar-toggler'); // The toggle button
   
-// let prevScrollpos = window.scrollY;
-// window.onscroll = function () {
-//   let currentScrollPos = window.scrollY;
-//   if (prevScrollpos > currentScrollPos) {
-//     document.querySelector("nav").style.top = "0"; // Show navbar
-//   } else {
-//     document.querySelector("nav").style.top = "-70px"; // Hide navbar
-//   }
-//   prevScrollpos = currentScrollPos;
-// };
+    // Check if the navbar is open
+    if (navbar.classList.contains('show')) {
+      // If the click is outside the navbar and toggle button
+      if (!navbar.contains(event.target) && !toggleButton.contains(event.target)) {
+        // Manually hide the navbar
+        bootstrap.Collapse.getInstance(navbar).hide();
+      }
+    }
+
+    if (event.target.tagName === 'A' && navbar.contains(event.target)) {
+        bootstrap.Collapse.getInstance(navbar).hide();
+      }
+  });
+  
