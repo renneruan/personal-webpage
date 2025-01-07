@@ -432,7 +432,7 @@ footer{
 @media (max-width: 768px) {
   .waves {
     bottom:0;
-    margin-bottom: 0px !important;
+    margin-bottom: 20px !important;
     height: 60px;
     min-height: 60px;
   }
