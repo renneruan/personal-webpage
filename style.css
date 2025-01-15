@@ -389,14 +389,13 @@ b {
   /* background-color: ; */
 }
 
+.bg-type{
+  background-color: teal;
+}
+
 /* Contact */ 
 .contact {
   font-size: 14px;
-}
-
-.contact-form{
-  width: 60%;
-  margin: auto;
 }
 
 /* Footer */
